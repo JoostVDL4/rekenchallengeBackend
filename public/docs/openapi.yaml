@@ -1,0 +1,195 @@
+openapi: 3.0.3
+info:
+  title: Laravel
+  description: ''
+  version: 1.0.0
+servers:
+  -
+    url: 'https://rekenchallenge.joostvdlaan.com'
+paths:
+  /api/reken-vragen:
+    get:
+      summary: 'Get all reken vragen.'
+      operationId: getAllRekenVragen
+      description: 'This endpoint retrieves a list of all reken vragen.'
+      parameters: []
+      responses:
+        200:
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  data:
+                    -
+                      id: 1
+                      vraag: 'Wat is 2 + 2?'
+                      antwoord: 4
+                      niveau: 1
+                    -
+                      id: 2
+                      vraag: 'Wat is 3 x 3?'
+                      antwoord: 9
+                      niveau: 2
+                properties:
+                  data:
+                    type: array
+                    example:
+                      -
+                        id: 1
+                        vraag: 'Wat is 2 + 2?'
+                        antwoord: 4
+                        niveau: 1
+                      -
+                        id: 2
+                        vraag: 'Wat is 3 x 3?'
+                        antwoord: 9
+                        niveau: 2
+                    items:
+                      type: object
+                      properties:
+                        id:
+                          type: integer
+                          example: 1
+                        vraag:
+                          type: string
+                          example: 'Wat is 2 + 2?'
+                        antwoord:
+                          type: integer
+                          example: 4
+                        niveau:
+                          type: integer
+                          example: 1
+      tags:
+        - Endpoints
+      security: []
+    post:
+      summary: ''
+      operationId: postApiRekenVragen
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - Endpoints
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                vraag:
+                  type: string
+                  description: 'Must not be greater than 255 characters.'
+                  example: wyxgiqkhbtuzhjp
+                  nullable: false
+                antwoord:
+                  type: integer
+                  description: ''
+                  example: 11
+                  nullable: false
+                niveau:
+                  type: integer
+                  description: ''
+                  example: 2
+                  nullable: false
+              required:
+                - vraag
+                - antwoord
+                - niveau
+      security: []
+  '/api/reken-vragen/{reken_vragen}':
+    put:
+      summary: ''
+      operationId: putApiRekenVragenReken_vragen
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - Endpoints
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                vraag:
+                  type: string
+                  description: 'Must not be greater than 255 characters.'
+                  example: jw
+                  nullable: false
+                antwoord:
+                  type: integer
+                  description: ''
+                  example: 12
+                  nullable: false
+                niveau:
+                  type: integer
+                  description: ''
+                  example: 15
+                  nullable: false
+              required:
+                - vraag
+                - antwoord
+                - niveau
+      security: []
+    delete:
+      summary: ''
+      operationId: deleteApiRekenVragenReken_vragen
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - Endpoints
+      security: []
+    parameters:
+      -
+        in: path
+        name: reken_vragen
+        description: ''
+        example: commodi
+        required: true
+        schema:
+          type: string
+  /api/store-question:
+    post:
+      summary: ''
+      operationId: postApiStoreQuestion
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - Endpoints
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                vraag:
+                  type: string
+                  description: 'Must not be greater than 255 characters.'
+                  example: yuksqe
+                  nullable: false
+                antwoord:
+                  type: integer
+                  description: ''
+                  example: 8
+                  nullable: false
+                niveau:
+                  type: integer
+                  description: ''
+                  example: 12
+                  nullable: false
+              required:
+                - vraag
+                - antwoord
+                - niveau
+      security: []
+tags:
+  -
+    name: Endpoints
+    description: ''

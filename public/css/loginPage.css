@@ -1,0 +1,165 @@
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Archivo Black', sans-serif;
+}
+
+body {
+    margin: 0;
+    background-color: #6cb9bf;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    position: relative;
+}
+
+.login__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5rem;
+    width: 100%;
+    color: #6cb9bf;
+    text-align: center; 
+}
+
+.login__card {
+    background-color: rgba(239, 135, 158, .9);
+    border-radius: 8px;
+    width: 40rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    text-align: center; 
+    
+}
+
+
+
+.login__card-header {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+    font-weight: bold;
+    background-color: #ebdb86;
+    border-radius: 2.5rem;
+}
+
+.login__label{
+    background-color: #ebdb86;
+    border-radius: 2.5rem;
+    padding:1rem;
+}
+
+.login__input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    align-items: center; 
+    font-size:1.6rem;
+}
+
+.login__label {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.login__input {
+    padding: 1rem;
+    font-size: 1.6rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    transition: border-color 0.3s;
+    width: 100%; 
+    max-width: 30rem; 
+    
+}
+
+.login__input:focus {
+    border-color: #007bff;
+}
+
+.login__checkbox {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    background-color: #ebdb86;
+    border-radius: 2.5rem;
+    padding:1rem;
+}
+
+.login__checkbox-input {
+    margin-right: 1rem;
+}
+
+.login__actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem; 
+}
+
+.login__submit-btn {
+    background-color: #ebdb86;
+    color: #6cb9bf;
+    padding: 1.2rem 2rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.6rem;
+    cursor: pointer;
+    transition:  0.3s, transform 0.3s;
+    font-family: 'Archivo Black', sans-serif;
+}
+
+.login__submit-btn:hover {
+    transform: scale(1.10);
+}
+
+
+
+.login__error {
+    font-size: 1.2rem;
+    color: red;
+    margin-top: 1rem;
+}
+
+
+.flower__img {
+    position: absolute; 
+    width: 10rem; 
+    height: auto; 
+    transition:  0.3s, transform 0.3s;
+}
+
+.flower__img:hover{
+    transform: scale(1.10);
+}
+
+.flower__img--1 {
+    top: 15rem; 
+    left: 10rem;
+}
+
+.flower__img--2 {
+    bottom: 5rem;
+    right: 5rem;
+}
+
+.flower__img--3 {
+    bottom: 5rem;
+    left: 15rem;
+}
+
+.flower__img--4 {
+    bottom: 30rem;
+    right: 10rem;
+}

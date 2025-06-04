@@ -1,0 +1,105 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: 'Archivo Black';
+}
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #6cb9bf;
+    flex-direction: column;
+}
+
+
+.login__page{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height:auto;
+    border-radius: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    color:white;
+    background-color: rgba(239, 135, 158, .9);
+    padding:2rem;
+    font-size:2rem;
+    font-family: 'Archivo Black';
+    gap:3rem;
+}
+
+
+.login__page > h1{
+    color:white;
+}
+
+
+
+
+.login__text{
+    text-decoration: none !important;
+    color: white;
+    padding: 1rem 2rem; 
+    border-radius: 0.5rem; 
+    background-color: #ebdb86; 
+    transition: background-color 0.3s ease; 
+    border: none; 
+    cursor: pointer; 
+    font-size: 1.6rem; 
+    display:inline-block; 
+}
+
+.login__button{
+    transition:  0.3s, transform 0.3s;
+}
+
+.login__button:hover {
+    transform: scale(1.10);
+}
+
+
+.text-center{
+    flex-direction: column;
+}
+
+.flower__img {
+    position: absolute; 
+    width: 10rem; 
+    height: auto; 
+    transition:  0.3s, transform 0.3s;
+}
+
+.flower__img:hover{
+    transform: scale(1.10);
+}
+
+.flower__img--1 {
+    top: 5rem; 
+    left: 2rem;
+}
+
+.flower__img--2 {
+    bottom: 2rem;
+    right:  9rem;
+}
+
+.flower__img--3 {
+    bottom: 2rem;
+    left: 15rem;
+}
+
+.flower__img--4 {
+    bottom: 50rem;
+    right: 10rem;
+}
