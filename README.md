@@ -1,3 +1,5 @@
+Backend van schoolopdracht. Gemaakt met Laravel via Docker
+
 
 - `docker compose up -d --build`
 - `docker compose exec phpmyadmin chmod 777 /sessions`
